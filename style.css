@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+button {
+    background-color: white;
+    cursor: pointer;
+}
+.img button{
+    background-color: inherit;
+    i{
+    color: white;
+    font-size: 20px;
+    }
+}
+body , header , .links , .main , .leftPart, .rightPart , .img , .color , .confirm , .buy , .choix , .choix p , .numShoes{
+    display: flex;
+}
+header , .links, .confirm , .buy{
+    justify-content: space-between;
+}
+body , .main ,.leftPart, .rightPart , .img , .choix p{
+    justify-content: center;
+}
+header{
+    align-items: center;
+}
+body{
+    height: 100vh;
+    align-items: center;
+    background-color: black;
+}
+.content{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+header{
+    padding: 20px 30px;
+    margin-bottom: 50px;
+}
+header div:nth-child(2){
+    max-width: 500px;
+    width: 100%;}
+.links{
+    width: 100%;
+}
+.logo img{
+    height: 40px;
+    width: 50px;
+}
+.main{
+    max-width: 850px;
+    width: 100%;
+    gap: 20px;
+}
+.leftPart, .rightPart{
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 49%;
+    gap: 10px;
+}
+.rightPart{
+    align-items: flex-start;
+    gap: 10px;
+}
+.rightPart a{
+    color: white;
+    padding: 10px;
+    background-color:black;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+.img{
+    width: 250px;
+    height: 250px;
+    background-color:black;
+    border-radius: 50%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+img{
+    width: 200px;
+    height: 150px;
+    rotate: 20deg;
+    cursor: pointer;
+}
+.color{
+    gap: 6px;
+}
+.confirm , .buy{
+    width: 100%;
+    align-items: center;
+}
+
+.choix p{
+    height: 30px;
+    width: 30px;
+    align-items: center;
+}
+.choix p:hover{
+ color: white;
+ background-color: black;
+ border-radius: 5px;
+}
+.numShoes{
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    accent-color: black;
+}
+label{
+    font-size: 20px;
+}
+.bars{
+    display: none;
+}
+.choix .toBrown:hover{
+background-color: #a29596;
+}
+@media (max-width:600px){
+    .main{
+        flex-direction: column;
+    }
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .main{
+        align-items: center;
+    }
+    header{
+        width: 95%;
+        padding-top: 70px;
+        margin-top: 135px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    header div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        justify-content: flex-end;
+    }
+    header div:nth-child(2) .links{display: none;}
+    header div:nth-child(2) .active{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 20px;
+        width: fit-content;
+    }
+    .leftPart{
+        flex-direction: row;
+        width: 95%;
+        justify-content: space-between;
+    }
+    .links button:hover{
+        width: fit-content;
+        scale: 1.2;
+        border-bottom: 1px solid red;
+    }
+    .rightPart{
+        width: 95%;
+    }
+    .logo{order: 2;}
+    .store{order: 3;}
+    .color{
+        flex-direction: column;
+    }
+}

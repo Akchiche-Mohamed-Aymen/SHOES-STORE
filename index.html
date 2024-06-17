@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="content">
+    <header>
+        <div class="logo"><img src="https://th.bing.com/th/id/OIP.AmW04-XKxCF23w1Vns3pCAHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt=""></div>
+        <div>
+        <div class="bars"><i class="fa-solid fa-bars"></i></div>
+        <div class="links" id="links">
+            <button onclick="change(0)">MEN</button>
+            <button onclick="change(1)">WOMEN</button>
+            <button onclick="change(2)">KIDS</button>
+            <button>CUSTOMIZE</button>
+            <button>SALE</button>
+        </div>
+    </div>
+        <div class="store"><i class="fa-solid fa-cart-shopping"></i></div>
+    </header>
+    <div class="main">
+        <div class="leftPart">
+            <div class="img">
+                <button type="button" id="row1"><i class="fa-solid fa-arrow-right"></i></button>
+                <img src="image1.jpg" alt="" onclick="demend()" id="img">
+                <button type="button" id="row2"> <i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+            <div class="color">
+                <div>
+                    <input type="radio" id="ans1" value="1" name="choice1" checked >
+                    <label for="ans1"></label>
+                </div>
+                <div>
+                    <input   type="radio" id="ans2" value="2" name="choice1">
+                    <label for="ans2"></label>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------->
+
+        <div class="rightPart">
+            <p>NIKE</p>
+            <h1>AIR MOTION 2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+            <div class="confirm">
+                <div class="tailles">
+                    <h2>Tallas</h2>
+                    <div class="choix">
+                        <p>8.5</p>
+                        <p>9</p>
+                        <p>9.5</p>
+                    </div>
+                </div>
+                <div class="numShoes">
+                    <label for="num">Cant</label>
+                    <input type="number" value="0" id="num">
+                </div> 
+            </div>
+            <div class="buy">
+                <label for="">$100.00</label>
+                <a href="sendEmail.html">ADD TO CART</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="main.js"></script>  
+    <script src="script.js"></script>  
+</body>
+</html>
